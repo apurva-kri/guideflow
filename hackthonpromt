@@ -1,2 +1,32 @@
 Build a futuristic dark dashboard for [your app].
 Green accents. Chat interface. Gemini API. Localhost.
+
+Build a complete website for GuideFlow - 
+a smart stadium navigation assistant.
+
+Pages needed:
+1. LOGIN PAGE - entry point with GuideFlow branding
+2. DASHBOARD - show match results and stadium info
+3. STADIUM MAP - show crowd levels at different 
+   sections with colors (red=crowded, green=empty)
+4. AI ASSISTANT - chat powered by Gemini API
+5. USER PROFILE - user details and settings
+
+Design:
+- Dark navy background
+- Bright green accents
+- Bold modern fonts
+- All pages connected through navigation bar
+
+Stadium data to show:
+- Food stalls: Section A (less crowded), 
+  Section C (very crowded), Section F (moderate)
+- Exits: Gate 1 (crowded), Gate 3 (less crowded), 
+  Gate 6 (fastest)
+- Restrooms: Gate 2 (closest), Gate 5 (less crowded)
+- First Aid: Gate 4
+- Match: Lions vs Titans, 64% win probability
+
+Use Gemini API from .env file for AI chat.
+Make all navigation links working between pages.
+Run on localhost and give me the link.
