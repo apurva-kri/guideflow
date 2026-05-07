@@ -1,6 +1,6 @@
 Build a futuristic dark dashboard for [your app].
 Green accents. Chat interface. Gemini API. Localhost.
-
+--------------------------------------------------------------
 Build a complete website for GuideFlow - 
 a smart stadium navigation assistant.
 
@@ -30,3 +30,13 @@ Stadium data to show:
 Use Gemini API from .env file for AI chat.
 Make all navigation links working between pages.
 Run on localhost and give me the link.
+----------------------------------------------------
+Push all project files to GitHub including:
+- index.html
+- all JS files
+- all CSS files
+- main.py
+- requirements.txt
+- .env.example (not the actual .env file)
+
+Commit message: "Add GuideFlow complete website"
