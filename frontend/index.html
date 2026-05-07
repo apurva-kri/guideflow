@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideFlow - Stadium Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation (Mockup) -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-location-arrow"></i>
+                <span>GuideFlow</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="/" class="nav-item active"><i class="fa-solid fa-comments"></i> Assistant</a>
+                <a href="/map.html" class="nav-item"><i class="fa-solid fa-map"></i> Stadium Map</a>
+                <a href="/results.html" class="nav-item"><i class="fa-solid fa-trophy"></i> Match Results</a>
+                <a href="/user.html" class="nav-item"><i class="fa-solid fa-ticket"></i> My Tickets</a>
+                <a href="/login.html" class="nav-item"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            </nav>
+            <div class="stadium-info">
+                <p>Live Crowd Levels: <span class="status-indicator">Moderate</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-wrapper">
+            <header class="chat-header">
+                <div>
+                    <h1>Stadium Assistant</h1>
+                    <p class="subtitle">Ask me for directions, food, or exit routes</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                </div>
+            </header>
+
+            <div class="chat-container" id="chat-container">
+                <div class="message assistant-message">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        Hi! I'm GuideFlow, your smart stadium navigation assistant. How can I help you today? Need the fastest route to a restroom or some food?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="chat-form">
+                    <div class="input-wrapper">
+                        <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off" required>
+                        <button type="submit" id="send-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="quick-actions">
+                    <button class="quick-btn" data-query="Where is the nearest restroom?">Nearest Restroom</button>
+                    <button class="quick-btn" data-query="Fastest exit to leave the stadium?">Fastest Exit</button>
+                    <button class="quick-btn" data-query="Where can I get food without a line?">Quick Food</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script references -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

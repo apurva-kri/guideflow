@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadium Map - GuideFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-location-arrow"></i>
+                <span>GuideFlow</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="/" class="nav-item"><i class="fa-solid fa-comments"></i> Assistant</a>
+                <a href="/map.html" class="nav-item active"><i class="fa-solid fa-map"></i> Stadium Map</a>
+                <a href="/results.html" class="nav-item"><i class="fa-solid fa-trophy"></i> Match Results</a>
+                <a href="/user.html" class="nav-item"><i class="fa-solid fa-ticket"></i> My Tickets</a>
+                <a href="/login.html" class="nav-item"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            </nav>
+            <div class="stadium-info">
+                <p>Live Crowd Levels: <span class="status-indicator">Moderate</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="page-wrapper">
+            <header class="chat-header">
+                <div>
+                    <h1>Interactive Map</h1>
+                    <p class="subtitle">Explore the stadium layout and facilities</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                </div>
+            </header>
+
+            <div class="content-container">
+                <div class="map-container">
+                    <img src="stadium_map.png" alt="Stadium Layout Map" class="stadium-map-img">
+                </div>
+                <div class="map-legend">
+                    <h3>Legend</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item"><i class="fa-solid fa-utensils" style="color: var(--accent-primary)"></i> Food Stalls</div>
+                        <div class="legend-item"><i class="fa-solid fa-restroom" style="color: var(--accent-secondary)"></i> Restrooms</div>
+                        <div class="legend-item"><i class="fa-solid fa-door-open" style="color: #ff5252"></i> Exits</div>
+                        <div class="legend-item"><i class="fa-solid fa-briefcase-medical" style="color: #ffab00"></i> First Aid</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Results - GuideFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-location-arrow"></i>
+                <span>GuideFlow</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="/" class="nav-item"><i class="fa-solid fa-comments"></i> Assistant</a>
+                <a href="/map.html" class="nav-item"><i class="fa-solid fa-map"></i> Stadium Map</a>
+                <a href="/results.html" class="nav-item active"><i class="fa-solid fa-trophy"></i> Match Results</a>
+                <a href="/user.html" class="nav-item"><i class="fa-solid fa-ticket"></i> My Tickets</a>
+                <a href="/login.html" class="nav-item"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            </nav>
+            <div class="stadium-info">
+                <p>Live Crowd Levels: <span class="status-indicator">Moderate</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="page-wrapper">
+            <header class="chat-header">
+                <div>
+                    <h1>Match Results</h1>
+                    <p class="subtitle">Recent scores and upcoming games</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                </div>
+            </header>
+
+            <div class="content-container">
+                <div class="results-grid">
+                    <!-- Match Card 1 -->
+                    <div class="match-card">
+                        <div class="match-date">Today, 20:00</div>
+                        <div class="teams-container">
+                            <div class="team">
+                                <div class="team-logo" style="background-color: #ff5252"></div>
+                                <span>Red Hawks</span>
+                            </div>
+                            <div class="score">
+                                <span class="score-number">3</span>
+                                <span>-</span>
+                                <span class="score-number">1</span>
+                            </div>
+                            <div class="team">
+                                <div class="team-logo" style="background-color: #2979FF"></div>
+                                <span>Blue Titans</span>
+                            </div>
+                        </div>
+                        <div class="match-status status-live">LIVE - 75'</div>
+                    </div>
+
+                    <!-- Match Card 2 -->
+                    <div class="match-card">
+                        <div class="match-date">Oct 12, 18:30</div>
+                        <div class="teams-container">
+                            <div class="team">
+                                <div class="team-logo" style="background-color: #00E676"></div>
+                                <span>Green Vipers</span>
+                            </div>
+                            <div class="score">
+                                <span class="score-number">2</span>
+                                <span>-</span>
+                                <span class="score-number">2</span>
+                            </div>
+                            <div class="team">
+                                <div class="team-logo" style="background-color: #ffab00"></div>
+                                <span>Yellow Jackets</span>
+                            </div>
+                        </div>
+                        <div class="match-status">FINAL</div>
+                    </div>
+                    
+                    <!-- Match Card 3 -->
+                    <div class="match-card">
+                        <div class="match-date">Oct 10, 19:00</div>
+                        <div class="teams-container">
+                            <div class="team">
+                                <div class="team-logo" style="background-color: #9C27B0"></div>
+                                <span>Purple Royals</span>
+                            </div>
+                            <div class="score">
+                                <span class="score-number">0</span>
+                                <span>-</span>
+                                <span class="score-number">1</span>
+                            </div>
+                            <div class="team">
+                                <div class="team-logo" style="background-color: #ff5252"></div>
+                                <span>Red Hawks</span>
+                            </div>
+                        </div>
+                        <div class="match-status">FINAL</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
